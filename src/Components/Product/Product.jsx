@@ -6,7 +6,7 @@ import toast from 'react-hot-toast'
 
 const Product = () => {
     const [data, setData] = useState([])
-console.log(data)
+    console.log(data)
     const getApiData = async () => {
         try {
             let res = await axios.get("https://ujjwalbackend.onrender.com/api/product")
@@ -45,20 +45,20 @@ console.log(data)
                             <table className='table table-bordered'>
                                 <thead>
                                     <tr>
+                                        <th>NO</th>
                                         <th>Name</th>
                                         <th>Category</th>
                                         <th>Subcategory</th>
                                         {/* <th>Description</th> */}
                                         <th>Image1</th>
                                         <th>Image2</th>
-                                        <th>Image3</th>
-                                        <th>Image4</th>
                                         <th>Actions</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    { data.map((item, index) => (
+                                    {data.map((item, index) => (
                                         <tr key={index}>
+                                            <td>{index + 1}</td>
                                             <td>{item.productname}</td>
                                             <td>{item.categoryname}</td>
                                             <td>{item.subcategoryName}</td>
@@ -73,7 +73,7 @@ console.log(data)
                                                     <img src={item.image2} alt="" style={{ height: 50 }} />
                                                 </a>
                                             </td>
-                                            <td>
+                                            {/* <td>
                                                 <a href={item.image3} target='_blank' rel="noopener noreferrer">
                                                     <img src={item.image3} alt="" style={{ height: 50 }} />
                                                 </a>
@@ -82,12 +82,12 @@ console.log(data)
                                                 <a href={item.image4} target='_blank' rel="noopener noreferrer">
                                                     <img src={item.image4} alt="" style={{ height: 50 }} />
                                                 </a>
-                                            </td>
-                                            {/* <td>
+                                            </td> */}
+                                            <td>
                                                 <Link to={`/updateproduct/${item._id}`}>
                                                     <button className='btn btn-success'>Edit</button>
                                                 </Link>
-                                            </td> */}
+                                            </td>
                                             <td>
                                                 <button className='btn btn-danger' onClick={() => { deleteRecord(item._id) }}>Delete</button>
                                             </td>

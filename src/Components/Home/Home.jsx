@@ -57,7 +57,7 @@ const Home = () => {
                                     <div className="card bg-info text-white mb-4">
                                         <div className="card-body">Product</div>
                                         <div className="card-footer d-flex align-items-center justify-content-between">
-                                            <Link className="small text-white stretched-link" to="/">View Details</Link>
+                                            <Link className="small text-white stretched-link" to="/product">View Details</Link>
                                             <div className="small text-white"><i className="fas fa-angle-right"></i></div>
                                         </div>
                                     </div>
@@ -84,7 +84,7 @@ const Home = () => {
                                     <div className="card bg-warning text-white mb-4">
                                         <div className="card-body">Newslestter</div>
                                         <div className="card-footer d-flex align-items-center justify-content-between">
-                                            <Link className="small text-white stretched-link" to="/">View Details</Link>
+                                            <Link className="small text-white stretched-link" to="/newsletter">View Details</Link>
                                             <div className="small text-white"><i className="fas fa-angle-right"></i></div>
                                         </div>
                                     </div>
