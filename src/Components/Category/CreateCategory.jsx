@@ -50,19 +50,19 @@ const CreateCategory = () => {
                         <Sidebar />
                     </div>
                     <div className="col-md-9">
-                        <h2 className='p-2 text-dark text-center'>Create Machine Category</h2>
+                        <h2 className='p-2 text-dark text-center'>Create Category</h2>
                         <div className="form-container">
                             <form onSubmit={postData}>
                                 <div className="mb-2">
-                                    <label htmlFor="productName" className="form-label">Machine Category Name</label>
-                                    <input type="text" name="categoryname" id="productName" className="form-control" onChange={getInputData} />
+                                    <label htmlFor="productName" className="form-label">Category Name <sup className='text-danger'>*</sup></label>
+                                    <input type="text" name="categoryname" id="productName" className="form-control" onChange={getInputData} placeholder='Category Name'/>
                                 </div>
                                 <div className="mb-2">
-                                    <label htmlFor="productImage" className="form-label">Machine Category Image</label>
+                                    <label htmlFor="productImage" className="form-label">Category Image <sup className='text-danger'>*</sup></label>
                                     <input type="file" name="image" id="productImage" className="form-control" onChange={getFileData} />
                                 </div>
                                 <button type="submit" className="btn btn-dark w-100" disabled={loading}>
-                                    {loading ? 'Loading...' : 'Add Machine Category'}
+                                    {loading ? 'Loading...' : 'Add Category'}
                                 </button>
                             </form>
                         </div>

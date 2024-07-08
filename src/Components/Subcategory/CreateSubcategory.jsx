@@ -62,7 +62,7 @@ const CreateSubcategory = () => {
                             <form onSubmit={postData}>
                                 <div className="row">
                                     <div className="col-md-6 mb-2">
-                                        <label htmlFor="subcategoryName" className="form-label">Select Machine Category <sup className='text-danger'>*</sup></label>
+                                        <label htmlFor="subcategoryName" className="form-label">Select Category <sup className='text-danger'>*</sup></label>
                                         <select name="categoryname" id="subcategoryname" className="form-control" onChange={getInputData}>
                                             <option value="">Please Select Category</option>
                                             {categoryData.map((category, index) => (
@@ -71,12 +71,12 @@ const CreateSubcategory = () => {
                                         </select>
                                     </div>
                                     <div className="col-md-6 mb-2">
-                                        <label htmlFor="categoryName" className="form-label">Machine SubCategory Name <sup className='text-danger'>*</sup></label>
-                                        <input type="text" name="subcategoryName" id="categoryName" className="form-control" onChange={getInputData} />
+                                        <label htmlFor="categoryName" className="form-label">SubCategory Name <sup className='text-danger'>*</sup></label>
+                                        <input type="text" name="subcategoryName" id="categoryName" className="form-control" onChange={getInputData} placeholder='Subcategory Name'/>
                                     </div>
                                 </div>
                                 <button type="submit" className="btn btn-dark w-100" disabled={loading}>
-                                    {loading ? 'Loading...' : 'Add Machine Subcategory'}
+                                    {loading ? 'Loading...' : 'Add  Subcategory'}
                                 </button>
                             </form>
                         </div>

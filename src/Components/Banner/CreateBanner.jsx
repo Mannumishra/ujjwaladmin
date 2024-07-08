@@ -47,7 +47,7 @@ const CreateBanner = () => {
                         <div className="form-container">
                             <form onSubmit={postData}>
                                 <div className="mb-2">
-                                    <label htmlFor="productImage" className="form-label">Machine Category Image</label>
+                                    <label htmlFor="productImage" className="form-label">Banner Image <sup className='text-danger'>*</sup></label>
                                     <input type="file" name="image" id="productImage" className="form-control" onChange={getFileData} />
                                 </div>
                                 <button type="submit" className="btn btn-dark w-100" disabled={loading}>

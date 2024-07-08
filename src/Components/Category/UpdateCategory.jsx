@@ -63,19 +63,19 @@ const UpdateCategory = () => {
                         <Sidebar />
                     </div>
                     <div className="col-md-9">
-                        <h2 className='p-2 text-dark text-center'>Update Product Category</h2>
+                        <h2 className='p-2 text-dark text-center'>Update Category</h2>
                         <div className="form-container">
                             <form onSubmit={postData}>
                                 <div className="mb-2">
-                                    <label htmlFor="categoryname" className="form-label">Category Name</label>
+                                    <label htmlFor="categoryname" className="form-label">Category Name <sup className='text-danger'>*</sup></label>
                                     <input type="text" name="categoryname" value={data.categoryname} id="categoryname" className="form-control" onChange={getInputData} />
                                 </div>
                                 <div className="mb-2">
-                                    <label htmlFor="image" className="form-label">Category Image</label>
+                                    <label htmlFor="image" className="form-label">Category Image <sup className='text-danger'>*</sup></label>
                                     <input type="file" name="image" id="image" className="form-control" onChange={getFileData} />
                                 </div>
                                 <button type="submit" className="btn btn-dark w-100" disabled={loading}>
-                                    {loading ? 'Updating...' : 'Update Product Category'}
+                                    {loading ? 'Updating...' : 'Update Category'}
                                 </button>
                             </form>
                         </div>

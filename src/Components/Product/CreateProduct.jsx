@@ -105,7 +105,7 @@ function CreateProduct() {
                     <Sidebar />
                 </div>
                 <div className="col-md-9">
-                    <h1 className="">Add A New Machine</h1>
+                    <h1 className="">Add A New Product</h1>
                     <div className="container-fluid">
                         <form onSubmit={handleSubmit} className="mt-4">
                             <div className="row">

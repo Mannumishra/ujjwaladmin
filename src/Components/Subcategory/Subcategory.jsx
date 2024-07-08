@@ -7,7 +7,7 @@ import toast from 'react-hot-toast';
 const SubcCategory = () => {
     const [data, setData] = useState([]);
     const [currentPage, setCurrentPage] = useState(1);
-    const [itemsPerPage] = useState(4); // Number of items per page
+    const [itemsPerPage] = useState(5); // Number of items per page
 
     const getApiData = async () => {
         try {
@@ -56,7 +56,7 @@ const SubcCategory = () => {
                     {/* // style={{position:"fixed" ,left:"25%"}} */}
                     <div className="col-md-9">  
                         <div style={{ display: "flex", justifyContent: "space-between" }}>
-                            <h2>Machine Subcategory</h2>
+                            <h2>Subcategory</h2>
                             <span>
                                 <Link to='/createsubcategory' className='btn btn-dark'>
                                     Create Machine Subcategory

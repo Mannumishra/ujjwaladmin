@@ -62,6 +62,7 @@ function App() {
               <Route path='/banner/:_id' element={<UpdateBanner />} />
             </> : toast.error("Please Login")
           }
+          <Route path='/login' element={<Login />} />
         </Routes>
         <Footer />
       </BrowserRouter>

@@ -104,7 +104,7 @@ function UpdateProduct() {
     };
 
     return (
-        <div className="container-fluid" style={{ marginTop: 80 }}>
+        <div className="container-fluid mt-4">
             <div className="row">
                 <div className="col-md-3">
                     <Sidebar />

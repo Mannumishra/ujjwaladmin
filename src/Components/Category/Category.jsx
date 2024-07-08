@@ -54,10 +54,10 @@ const Category = () => {
                     </div>
                     <div className="col-md-9">
                         <div style={{ display: "flex", justifyContent: "space-between" }}>
-                            <h2>Machine Category</h2>
+                            <h2>Category</h2>
                             <span>
                                 <Link to='/createcategory' className='btn btn-dark'>
-                                    Create Machine Category
+                                    Create Category
                                 </Link>
                             </span>
                         </div>
