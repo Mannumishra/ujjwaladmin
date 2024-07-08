@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import toast from 'react-hot-toast'
 
 const Login = () => {
   const [isLogin, setIsLogin] = useState(false)
@@ -20,9 +21,10 @@ const Login = () => {
       if (email === validEmail && password === validPassword) {
         setIsLogin(true)
         sessionStorage.setItem("login", true)
-        window.location.href="/home"
+        toast.success("Login successFully")
+        window.location.href="/"
       } else {
-        alert("Invalid email or password");
+        toast.error("Invaild user Name or password")
       }
     } catch (error) {
       console.log(error);
