@@ -41,7 +41,7 @@ const Testimonial = () => {
                 <div className="col-md-9">
                     <div style={{ display: "flex", justifyContent: "space-between" }}>
                         <h2>Testimonials</h2>
-                        <Link to='/createtestimonial' className='btn btn-dark'>Create Testimonial</Link>
+                        <Link to='/createtestimonial' className='btn btn-success'>Create Testimonial</Link>
                     </div>
                     <table className='table'>
                         <thead>

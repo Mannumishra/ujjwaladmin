@@ -167,7 +167,7 @@ function UpdateProduct() {
                                 placeholder="Enter product details here..."
                             />
                         </div>
-                        <button type="submit" className="btn btn-dark w-100" style={{ marginBottom: 100 }}>{loading ? "Please wait..." : "Update Product"}</button>
+                        <button type="submit" className="btn btn-success w-100" style={{ marginBottom: 100 }}>{loading ? "Please wait..." : "Update Product"}</button>
                     </form>
                 </div>
             </div>

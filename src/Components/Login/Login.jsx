@@ -49,7 +49,7 @@ const Login = () => {
                 <input type="password" name='password' class="form-control" placeholder="password" onChange={getInputData} />
               </div>
               <div class="mb-3">
-                <button className='btn btn-dark'>Login</button>
+                <button className='btn btn-success'>Login</button>
               </div>
             </form>
           </div>

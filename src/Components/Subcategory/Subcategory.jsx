@@ -48,7 +48,7 @@ const SubcCategory = () => {
 
     return (
         <>
-            <div className="container-fluid" style={{ marginTop: 80 }}>
+            <div className="container-fluid" style={{ marginTop: 70 }}>
                 <div className="row">
                     <div className="col-md-3">
                         <Sidebar />
@@ -58,7 +58,7 @@ const SubcCategory = () => {
                         <div style={{ display: "flex", justifyContent: "space-between" }}>
                             <h2>Subcategory</h2>
                             <span>
-                                <Link to='/createsubcategory' className='btn btn-dark'>
+                                <Link to='/createsubcategory' className='btn btn-success'>
                                     Create Machine Subcategory
                                 </Link>
                             </span>

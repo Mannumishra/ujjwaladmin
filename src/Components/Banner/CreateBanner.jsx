@@ -37,20 +37,20 @@ const CreateBanner = () => {
     
     return (
         <>
-            <div className="container-fluid" style={{ marginTop: 80 }}>
+            <div className="container-fluid" style={{ marginTop: 70 }}>
                 <div className="row">
                     <div className="col-md-3">
                         <Sidebar />
                     </div>
                     <div className="col-md-9">
-                        <h2 className='p-2 text-dark text-center'>Create Banner</h2>
+                        <h2 className='p-2  text-center'>Create Banner</h2>
                         <div className="form-container">
                             <form onSubmit={postData}>
                                 <div className="mb-2">
                                     <label htmlFor="productImage" className="form-label">Banner Image <sup className='text-danger'>*</sup></label>
                                     <input type="file" name="image" id="productImage" className="form-control" onChange={getFileData} />
                                 </div>
-                                <button type="submit" className="btn btn-dark w-100" disabled={loading}>
+                                <button type="submit" className="btn btn-success w-100" disabled={loading}>
                                     {loading ? 'Loading...' : 'Add Banner'}
                                 </button>
                             </form>

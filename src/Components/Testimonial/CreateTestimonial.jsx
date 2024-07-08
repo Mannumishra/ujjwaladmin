@@ -47,7 +47,7 @@ const CreateTestimonial = () => {
                     <Sidebar />
                 </div>
                 <div className="col-md-9">
-                    <h2 className=' p-2 text-dark text-center'>Create Testimonial</h2>
+                    <h2 className=' p-2 test-light text-center'>Create Testimonial</h2>
                     <div className="form-container">
                         <form onSubmit={postData}>
                             <div className="mb-2">
@@ -62,7 +62,7 @@ const CreateTestimonial = () => {
                                 <label htmlFor="image" className="form-label">Image</label>
                                 <input type="file" name="image" id="image" className="form-control" onChange={getFileData} />
                             </div>
-                            <button type="submit" className="btn btn-dark w-100">Add Testimonial</button>
+                            <button type="submit" className="btn btn-success w-100">Add Testimonial</button>
                         </form>
                     </div>
                 </div>

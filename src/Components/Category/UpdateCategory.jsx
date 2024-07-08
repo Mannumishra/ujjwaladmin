@@ -57,13 +57,13 @@ const UpdateCategory = () => {
     
     return (
         <>
-            <div className="container-fluid" style={{ marginTop: 80 }}>
+            <div className="container-fluid" style={{ marginTop: 70 }}>
                 <div className="row">
                     <div className="col-md-3">
                         <Sidebar />
                     </div>
                     <div className="col-md-9">
-                        <h2 className='p-2 text-dark text-center'>Update Category</h2>
+                        <h2 className='p-2  text-center' style={{color:"white"}}>Update Category</h2>
                         <div className="form-container">
                             <form onSubmit={postData}>
                                 <div className="mb-2">
@@ -74,7 +74,7 @@ const UpdateCategory = () => {
                                     <label htmlFor="image" className="form-label">Category Image <sup className='text-danger'>*</sup></label>
                                     <input type="file" name="image" id="image" className="form-control" onChange={getFileData} />
                                 </div>
-                                <button type="submit" className="btn btn-dark w-100" disabled={loading}>
+                                <button type="submit" className="btn btn-success w-100" disabled={loading}>
                                     {loading ? 'Updating...' : 'Update Category'}
                                 </button>
                             </form>

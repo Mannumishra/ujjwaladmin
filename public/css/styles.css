@@ -2980,7 +2980,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-border-color: #f8f9fa;
 }
 
-.btn-dark {
+.btn-success {
   --bs-btn-color: #fff;
   --bs-btn-bg: #212529;
   --bs-btn-border-color: #212529;
@@ -8086,7 +8086,7 @@ textarea.form-control-lg {
   color: rgba(var(--bs-light-rgb), var(--bs-text-opacity)) !important;
 }
 
-.text-dark {
+.test-light {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-dark-rgb), var(--bs-text-opacity)) !important;
 }

@@ -31,7 +31,7 @@ const Contact = () => {
     }, [])
     return (
         <>
-            <div className="container-fluid" style={{ marginTop: 80 }}>
+            <div className="container-fluid" style={{ marginTop: 70 }}>
                 <div className="row">
                     <div className="col-md-3">
                         <Sidebar />

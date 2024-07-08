@@ -11,10 +11,10 @@ const Navbar = () => {
     }
 
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+        <nav className="navbar navbar-expand-lg navbar-light  fixed-top" style={{backgroundColor:"#1D2C59"}}>
             <div className="container-fluid">
                 {
-                    login ? <Link className="navbar-brand text-light" to="/home">Admin Penel</Link> :
+                    login ? <Link className="navbar-brand text-light" to="/">Admin Penel</Link> :
                         <Link className="navbar-brand text-light" to="/login">Admin Penel</Link>
                 }
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,7 +23,7 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         {login ? <li className="nav-item">
-                            <Link className="nav-link active text-light" aria-current="page" to="/home">Home</Link>
+                            <Link className="nav-link active text-light" aria-current="page" to="/">Home</Link>
                         </li> : ""
                         }
                     </ul>

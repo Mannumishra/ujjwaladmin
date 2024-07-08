@@ -45,7 +45,7 @@ const Banner = () => {
 
     return (
         <>
-            <div className="container-fluid" style={{ marginTop: 80 }}>
+            <div className="container-fluid" style={{ marginTop: 70 }}>
                 <div className="row">
                     <div className="col-md-3">
                         <Sidebar />
@@ -53,7 +53,7 @@ const Banner = () => {
                     <div className="col-md-9">
                         <div style={{ display: "flex", justifyContent: "space-between" }}>
                             <h2>Banner</h2>
-                            <span><Link to='/createbanner' className='btn btn-dark'>Add Banner</Link></span>
+                            <span><Link to='/createbanner' className='btn btn-success'>Add Banner</Link></span>
                         </div>
                         <table className='table'>
                             <thead>

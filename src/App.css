@@ -7,6 +7,32 @@
   pointer-events: none;
 }
 
+.col-md-9 {
+  background-color: #69C7D3;
+  width: 79%;
+  margin-left: 21%;
+  height: 630px;
+  color: white;
+  /* position: fixed; */
+}
+
+th {
+  color: white;
+}
+
+td {
+  color: white;
+}
+
+h2 {
+  color: white !important;
+}
+
+td a button{
+  background-color:  #28a745 !important;
+}
+
+
 .py-4 {
   padding-top: -3.5rem !important;
   padding-bottom: 0.5rem !important;
@@ -37,6 +63,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

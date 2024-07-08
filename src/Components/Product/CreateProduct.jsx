@@ -99,7 +99,7 @@ function CreateProduct() {
     };
 
     return (
-        <div className="container-fluid" style={{ marginTop: 80 }}>
+        <div className="container-fluid" style={{ marginTop: 70 }}>
             <div className="row">
                 <div className="col-md-3">
                     <Sidebar />
@@ -164,7 +164,7 @@ function CreateProduct() {
                                 />
                             </div>
 
-                            <button type="submit" className="btn btn-dark w-100" style={{ marginBottom: 100 }}>{loding ? "Please wait...." : "Add New Product"}</button>
+                            <button type="submit" className="btn btn-success w-100" style={{ marginBottom: 100 }}>{loding ? "Please wait...." : "Add New Product"}</button>
                         </form>
                     </div>
                 </div>

@@ -47,7 +47,7 @@ const Category = () => {
 
     return (
         <>
-            <div className="container-fluid" style={{ marginTop: 80 }}>
+            <div className="container-fluid" style={{ marginTop: 70 }}>
                 <div className="row">
                     <div className="col-md-3">
                         <Sidebar />
@@ -56,7 +56,7 @@ const Category = () => {
                         <div style={{ display: "flex", justifyContent: "space-between" }}>
                             <h2>Category</h2>
                             <span>
-                                <Link to='/createcategory' className='btn btn-dark'>
+                                <Link to='/createcategory' className='btn btn-success'>
                                     Create Category
                                 </Link>
                             </span>

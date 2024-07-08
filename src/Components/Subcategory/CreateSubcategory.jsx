@@ -51,13 +51,13 @@ const CreateSubcategory = () => {
 
     return (
         <>
-            <div className="container-fluid" style={{ marginTop: 80 }}>
+            <div className="container-fluid" style={{ marginTop: 70 }}>
                 <div className="row">
                     <div className="col-md-3">
                         <Sidebar />
                     </div>
                     <div className="col-md-9">
-                        <h2 className=' p-2 text-dark text-center'>Create Machine Category</h2>
+                        <h2 className=' p-2 test-light text-center'>Create Machine Category</h2>
                         <div className="form-container">
                             <form onSubmit={postData}>
                                 <div className="row">
@@ -75,7 +75,7 @@ const CreateSubcategory = () => {
                                         <input type="text" name="subcategoryName" id="categoryName" className="form-control" onChange={getInputData} placeholder='Subcategory Name'/>
                                     </div>
                                 </div>
-                                <button type="submit" className="btn btn-dark w-100" disabled={loading}>
+                                <button type="submit" className="btn btn-success w-100" disabled={loading}>
                                     {loading ? 'Loading...' : 'Add  Subcategory'}
                                 </button>
                             </form>

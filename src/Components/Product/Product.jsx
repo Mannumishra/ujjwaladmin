@@ -43,7 +43,7 @@ const Product = () => {
 
     return (
         <>
-            <div className="container-fluid" style={{ marginTop: 80 }}>
+            <div className="container-fluid" style={{ marginTop: 70 }}>
                 <div className="row">
                     <div className="col-md-3">
                         <Sidebar />
@@ -59,7 +59,7 @@ const Product = () => {
                             <table className='table table-bordered'>
                                 <thead>
                                     <tr>
-                                        <th>NO</th>
+                                        <th className='text-light'>NO</th>
                                         <th>Product Name</th>
                                         <th>Category</th>
                                         <th>Subcategory</th>
